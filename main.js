@@ -13,13 +13,14 @@ function Post() {
     } else if (UserInput == "fuck") {
         UserInput = " darn "
     } else if (UserInput == "bitch") {
-        UserInput = " girl dog "
+        UserInput = " mean "
     } else {
         UserInput = document.getElementById("chat-input").value;
     }
     
     // document.getElementById("bubble").innerHTML = (UserInput);
-    document.getElementById("bubble").append(UserInput);
-    // $("bubble").html(UserInput);
+    // document.getElementById("bubble").append(UserInput);
+    $("ul").append($("<li></li").html(UserInput));
     
 }
+

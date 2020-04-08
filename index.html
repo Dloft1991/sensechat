@@ -9,18 +9,50 @@
     <title>SenseChat</title>
 </head>
 <body>
+    <style>
+        .Title {
+            font-size: xx-large;
+        }
+       li {
+           background-color: rgba(34, 34, 240, 0.995);
+           color: white;
+           max-width: 100px;
+           height: 100%;
+           border-radius: 5px;
+           padding: 2px;
+           margin-top: 5px;
+           list-style: none;
+           overflow-wrap: anywhere;
+           text-align: right;
+           margin-left: 80px;
+           padding-right: 10px;
+       }
+       .chat-block {
+           background-color: lightgray;
+           width: 250px;
+           height: 500px;
+           padding-top: 2px;
+           overflow: scroll;
+           overflow: auto;
+       }
+       input {
+           width: 200px;
+       }
+    </style>
     <div class="Title">
-        SenseChat
+        SensaChat
     </div>
     <div class="chat-block">
-        <div id="chat-script">
+        <!-- <div id="chat-script">
             <p id="bubble"></p>
-        </div>
-        <input type="text" id="chat-input" >
+        </div> -->
+        <ul id="ul">
+        </ul>
+    </div>
+    <input type="text" id="chat-input" >
 
         </input>
         <button value="submit" id="button" onClick="Post();">Send</button>
-    </div>
 </body>
 <script src="main.js"></script>
 </html>
